@@ -34,7 +34,7 @@ public class CalculoCustoViagemVeraoTest {
         when(bairro4.getCustoTransporte()).thenReturn(7.9);
     }
 
-    @ParameterizedTest
+    /*@ParameterizedTest
     @CsvSource({
             "9, 0.0", // on-point
             "10, 3.915", // off-point
@@ -52,7 +52,7 @@ public class CalculoCustoViagemVeraoTest {
         custoViagemVerao.definePassageiro(passageiro);
 
         assertEquals(desconto, custoViagemVerao.descontoPontuacao());
-    }
+    }*/
 
     @ParameterizedTest
     @MethodSource("geraBairrosPercorridos")

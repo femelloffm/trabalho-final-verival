@@ -6,7 +6,7 @@ public class CalculoCustoViagemVerao extends CalculoCustoViagemBasico {
         double custobasico = calculoCustoBasico();
         if (getPassageiro().getPontuacaoMedia() > 9.0){
             return custobasico * 0.09;
-        } else {:w:
+        } else {
             return 0.0;
         }
     }

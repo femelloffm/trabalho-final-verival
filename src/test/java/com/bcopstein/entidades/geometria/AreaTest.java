@@ -56,7 +56,9 @@ public class AreaTest {
             "90, 140, 110, 150" // out-point (supEsq y)
     })
     public void testaExcecaoNoConstrutorComLimites(int x1, int y1, int x2, int y2) {
-        assertThrows(IllegalArgumentException.class, () -> new Area(new Ponto(x1, y1), new Ponto(x2, y2)),
+        Ponto ponto1 = new Ponto(x1, y1);
+        Ponto ponto2 = new Ponto(x2, y2);
+        assertThrows(IllegalArgumentException.class, () -> new Area(ponto1, ponto2),
             "O retangulo deve ser definido pela diagonal principal");
     }
 

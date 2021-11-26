@@ -16,6 +16,12 @@ public class PassageiroTest {
         assertEquals(1, passageiro.getQtdadeAvaliacoes());
     }
 
+    @Test
+    public void testaPontuacaoMedia() {
+        Passageiro passageiro = Passageiro.passageiroExistente("01236925874","Eduardo Carlos", 30, 4);
+        assertEquals(7, passageiro.getPontuacaoMedia());
+    }
+
     @ParameterizedTest
     @CsvSource({
             "0", // on-point

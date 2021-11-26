@@ -28,14 +28,14 @@ public class ServicosPassageiro {
     public List<String> getListaBairros(){
         return repBairros.recuperaListaBairros()
                 .stream()
-                .map(b->b.getNome())
+                .map(Bairro::getNome)
                 .collect(Collectors.toList());
     }
 
     public List<String> getPassageirosCadastrados(){
         return repPassageiros.listaPassageiros()
                 .stream()
-                .map(p->p.getNome())
+                .map(Passageiro::getNome)
                 .collect(Collectors.toList());
     }
 

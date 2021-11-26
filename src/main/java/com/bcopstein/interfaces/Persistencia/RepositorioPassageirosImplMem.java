@@ -32,7 +32,6 @@ public class RepositorioPassageirosImplMem implements IRepositorioPassageiros {
 
     @Override
     public List<Passageiro> listaPassageiros() {
-        List<Passageiro> lst = new ArrayList<>(passageiros.values());
-        return lst;
+        return new ArrayList<>(passageiros.values());
     }
 }

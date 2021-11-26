@@ -36,6 +36,6 @@ public class RepositorioBairrosImplMem implements IRepositorioBairros {
 
     @Override
     public List<Bairro> recuperaListaBairros() {
-        return new ArrayList<Bairro>(bairros.values());
+        return new ArrayList<>(bairros.values());
     }
 }

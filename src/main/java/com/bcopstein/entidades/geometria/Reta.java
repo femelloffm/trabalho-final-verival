@@ -1,7 +1,8 @@
 package com.bcopstein.entidades.geometria;
 
 public class Reta {
-    private Ponto p1,p2;
+    private Ponto p1;
+    private Ponto p2;
 
     public Reta(Ponto p1,Ponto p2){
         this.p1 = p1;
